@@ -51,7 +51,7 @@ CNN model is trained using the extracted features as inputs and the ground truth
 labels as outputs. Hyperparameter tuning is conducted to fine-tune the model's 
 performance, and the model is deployed in a production environment.
 <div style="text-align: center;">
-  <img src="architecture.jpg" alt="architecture" width="600"/>
+  <img src="architecture.jpg" alt="architecture"/>
 </div>
 
 ## Final Presentation of the project
