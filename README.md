@@ -19,6 +19,7 @@ the growing of fresh blood vessels;
 4. Proliferative diabetic retinopathy: It is the advanced stage, where the growth 
 features secreted by the retina activate proliferation of the new blood vessels, 
 growing along inside covering of retina in some vitreous gel, filling the eye.<br/>
+<br/>
 Each stage has its characteristics and particular properties, so doctors possibly could 
 not take some of them into account, and thus make an incorrect diagnosis. So this 
 leads to the idea of creation of an automatic solution for DR detection.
