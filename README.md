@@ -22,4 +22,4 @@ growing along inside covering of retina in some vitreous gel, filling the eye.
 
 
 ## Final Presentation of the project
-A presentation summarizing the entire project is available in the file named **"RetinoAI_Final_PPT"**.
+A presentation summarizing the entire project is available in the file named **"RetinoAI_Final_PPT"** and project Report in the file named **"RetinoAI_Report"**.
