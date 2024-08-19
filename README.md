@@ -33,12 +33,24 @@ Learning Models (CNN).
 into 3662 training, 1928 validation, and 13000 testing images by organizers of 
 Kaggle competition, each photography is of different resolution.
 Here, we consider 5 stages of diabetic retinopathy:
-3
 1. No diabetic retinopathy (label 0)
 2. Mild diabetic retinopathy (label 1)
 3. Moderate diabetic retinopathy (label 2)
 4. Severe diabetic retinopathy (label 3)
 5. Proliferative diabetic retinopathy (label 4)
+
+## System Architecture
+This project's system architecture begins by collecting a dataset of retinal images 
+from diabetic patients, followed by preprocessing to normalize the images' size 
+and color. Gaussian blur is applied to remove any artifacts or noise. Data 
+augmentation techniques such as rotations, translations, scaling, and flipping are 
+applied to increase the dataset's diversity. The dataset is split into training, 
+validation, and testing sets. A ResNet50 model is used as a feature extractor, and a 
+CNN model is built to classify the images based on the extracted features. The 
+CNN model is trained using the extracted features as inputs and the ground truth 
+labels as outputs. Hyperparameter tuning is conducted to fine-tune the model's 
+performance, and the model is deployed in a production environment.
+<img src="images/architecture.jpg" alt="architecture" width="600"/>
 
 ## Final Presentation of the project
 A presentation summarizing the entire project is available in the file named **"RetinoAI_Final_PPT"** and project Report in the file named **"RetinoAI_Report"**.
