@@ -48,7 +48,7 @@ CNN model is trained using the extracted features as inputs and the ground truth
 labels as outputs. Hyperparameter tuning is conducted to fine-tune the model's 
 performance, and the model is deployed in a production environment.
 <div style="text-align: center;">
-  <img src="architecture.jpg" alt="architecture"/>
+  <img src="images/architecture.jpg" alt="architecture"/>
 </div>
 
 The project flow is as mentioned below:
@@ -103,13 +103,13 @@ as learning rate, batch size, and number of epochs to fine-tune the model's
 performance.
 9. **Testing**: Evaluate the trained model on the testing set to measure its 
 accuracy, precision, recall, and F1 score.
-<img src="results.jpg" alt="results"/>
+<img src="images/results.jpg" alt="results"/>
 
 10. **Deployment**: Deploy the model in a production environment, such as a 
 mobile app or web service, where it can be used to classify retinal images 
 as normal or diseased.
     - we have built an user interface (UI) for diabetic retinopathy detection using Streamlit, a popular library for creating web applications in Python.
-<img src="UI_preview.jpg" alt="UI preview"/>
+<img src="images/UI_preview.jpg" alt="UI preview"/>
 
 ## Final Presentation of the project
 A presentation summarizing the entire project is available in the file named **"RetinoAI_Final_PPT"** and project Report in the file named **"RetinoAI_Report"**.
