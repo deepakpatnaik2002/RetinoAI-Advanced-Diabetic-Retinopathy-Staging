@@ -29,9 +29,6 @@ This is a 5 Class Image Classification Task based on a Kaggle dataset
 from Eye Images (Aravind Eye hospital) - APTOS 2019 Challenge. The goal is to 
 predict the Blindness Stage (0-4) class from the Eye retina Image using Deep 
 Learning Models (CNN).
- The full dataset consists of 18590 fundus photographs, which are divided 
-into 3662 training, 1928 validation, and 13000 testing images by organizers of 
-Kaggle competition, each photography is of different resolution.
 Here, we consider 5 stages of diabetic retinopathy:
 1. No diabetic retinopathy (label 0)
 2. Mild diabetic retinopathy (label 1)
@@ -69,33 +66,49 @@ The project flow is as mentioned below:
 The Summary of the steps we followed:
 1. **Data collection**: Collect a large dataset of retinal images from diabetic 
 patients, including both normal and diseased images.
-- The dataset can be accessed via this link from kaggle: [Blindness_Detection](https://www.kaggle.com/competitions/aptos2019-blindness-detection/data)
+- The dataset can be accessed via this link from kaggle: [Blindness_Detection](https://www.kaggle.com/competitions/aptos2019-blindness-detection/data).
+**Note:**  
 2. **Data preprocessing**: Preprocess the images to normalize their size and 
 color, and remove any artifacts or noise. Apply Gaussian blur to smooth 
 out any minor variations in the images.
-4. **Data augmentation**: Augment the images by applying various 
+- To extract the features from the retina images,we preprocessed given images 
+using:
+   - **Gaussian Blur**: It is a method of blurring an image by convolving the image with 
+a gaussian filter.The blur effect is achieved by averaging the colors of the pixels 
+in the image. 
+   - **Circular cropping**: We found that the size of an image can further reduced by 
+focusing only on the circular retina part from the image.So we tried to crop the 
+image circularly ,which reduced the size of image to some extent.
+
+3. **Data augmentation**: Augment the images by applying various 
 transformations such as rotations, translations, scaling, and flipping. This 
 helps increase the diversity of the dataset and improves the robustness of 
 the model.
-5. **Split the data**: Split the dataset into training, validation, and testing sets.
-6. **Transfer learning**: Use a pre-trained ResNet50 model as a feature 
+- This is done , because intially when we observed the class distribution in the dataset to be imbalanced, and hence to balance it, we have further increased the dataset size by Data augmentation technique by applying various 
+transformations such as rotations, translations, scaling, and flipping.
+4. **Split the data**: Split the dataset into training, validation, and testing sets.
+5. **Transfer learning**: Use a pre-trained ResNet50 model as a feature 
 extractor, and freeze its layers. Extract the features from the augmented 
 dataset using the ResNet50 model.
-7. **CNN model**: Build a CNN model to classify the retinal images based on 
+6. **CNN model**: Build a CNN model to classify the retinal images based on 
 the extracted features. The CNN model can consist of multiple layers, 
 including convolutional layers, pooling layers, and fully connected layers.
-8. **Training**: Train the CNN model using the extracted features as inputs, and 
+7. **Training**: Train the CNN model using the extracted features as inputs, and 
 the ground truth labels as outputs. This involves initializing the model, 
 defining the loss function, optimizing the model parameters, and 
 evaluating the model's performance on the validation set.
-9. **Hyperparameter tuning**: Experiment with different hyperparameters such 
+- We have trained 2 different types of models:
+  1. Using Pre-Trained ResNet-50 model weights alone.
+  2. Using ResNet-50 + engineered layers(as shown in the architecture).
+8. **Hyperparameter tuning**: Experiment with different hyperparameters such 
 as learning rate, batch size, and number of epochs to fine-tune the model's 
 performance.
-10. **Testing**: Evaluate the trained model on the testing set to measure its 
+9. **Testing**: Evaluate the trained model on the testing set to measure its 
 accuracy, precision, recall, and F1 score.
-11. **Deployment**: Deploy the model in a production environment, such as a 
+<img src="results.jpg" alt="results"/>
+10. **Deployment**: Deploy the model in a production environment, such as a 
 mobile app or web service, where it can be used to classify retinal images 
 as normal or diseased.
-
+- we have built an user interface (UI) for diabetic retinopathy detection using Streamlit, a popular library for creating web applications in Python.
 ## Final Presentation of the project
 A presentation summarizing the entire project is available in the file named **"RetinoAI_Final_PPT"** and project Report in the file named **"RetinoAI_Report"**.
