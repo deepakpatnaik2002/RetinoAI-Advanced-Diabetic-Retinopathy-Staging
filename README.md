@@ -54,5 +54,36 @@ performance, and the model is deployed in a production environment.
   <img src="architecture.jpg" alt="architecture"/>
 </div>
 
+The project is as mentioned below:
+1. **Data collection**: Collect a large dataset of retinal images from diabetic 
+patients, including both normal and diseased images.
+2. **Data preprocessing**: Preprocess the images to normalize their size and 
+color, and remove any artifacts or noise. Apply Gaussian blur to smooth 
+out any minor variations in the images.
+3. **Data augmentation**: Augment the images by applying various 
+transformations such as rotations, translations, scaling, and flipping. This 
+helps increase the diversity of the dataset and improves the robustness of 
+the model.
+4. **Split the data**: Split the dataset into training, validation, and testing sets.
+5. **Transfer learning**: Use a pre-trained ResNet50 model as a feature 
+extractor, and freeze its layers. Extract the features from the augmented 
+dataset using the ResNet50 model.
+6. **CNN model**: Build a CNN model to classify the retinal images based on 
+the extracted features. The CNN model can consist of multiple layers, 
+including convolutional layers, pooling layers, and fully connected layers.
+19
+7. **Training**: Train the CNN model using the extracted features as inputs, and 
+the ground truth labels as outputs. This involves initializing the model, 
+defining the loss function, optimizing the model parameters, and 
+evaluating the model's performance on the validation set.
+8. **Hyperparameter tuning**: Experiment with different hyperparameters such 
+as learning rate, batch size, and number of epochs to fine-tune the model's 
+performance.
+9. **Testing**: Evaluate the trained model on the testing set to measure its 
+accuracy, precision, recall, and F1 score.
+10. **Deployment**: Deploy the model in a production environment, such as a 
+mobile app or web service, where it can be used to classify retinal images 
+as normal or diseased.
+
 ## Final Presentation of the project
 A presentation summarizing the entire project is available in the file named **"RetinoAI_Final_PPT"** and project Report in the file named **"RetinoAI_Report"**.
