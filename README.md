@@ -50,7 +50,7 @@ CNN model is built to classify the images based on the extracted features. The
 CNN model is trained using the extracted features as inputs and the ground truth 
 labels as outputs. Hyperparameter tuning is conducted to fine-tune the model's 
 performance, and the model is deployed in a production environment.
-<img src="images/architecture.jpg" alt="architecture" width="600"/>
+<img src="architecture.jpg" alt="architecture" width="600"/>
 
 ## Final Presentation of the project
 A presentation summarizing the entire project is available in the file named **"RetinoAI_Final_PPT"** and project Report in the file named **"RetinoAI_Report"**.
