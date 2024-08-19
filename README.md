@@ -66,8 +66,7 @@ The project flow is as mentioned below:
 The Summary of the steps we followed:
 1. **Data collection**: Collect a large dataset of retinal images from diabetic 
 patients, including both normal and diseased images.
-- The dataset can be accessed via this link from kaggle: [Blindness_Detection](https://www.kaggle.com/competitions/aptos2019-blindness-detection/data).
-**Note:**  
+  - The dataset can be accessed via this link from kaggle: [Blindness_Detection](https://www.kaggle.com/competitions/aptos2019-blindness-detection/data).
 2. **Data preprocessing**: Preprocess the images to normalize their size and 
 color, and remove any artifacts or noise. Apply Gaussian blur to smooth 
 out any minor variations in the images.
