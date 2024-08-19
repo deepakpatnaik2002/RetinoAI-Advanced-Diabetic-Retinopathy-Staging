@@ -84,8 +84,7 @@ image circularly ,which reduced the size of image to some extent.
 transformations such as rotations, translations, scaling, and flipping. This 
 helps increase the diversity of the dataset and improves the robustness of 
 the model.
-- This is done , because intially when we observed the class distribution in the dataset to be imbalanced, and hence to balance it, we have further increased the dataset size by Data augmentation technique by applying various 
-transformations such as rotations, translations, scaling, and flipping.
+  - This approach was adopted because the initial class distribution in the dataset was imbalanced. To address this, we used data augmentation techniques, including rotations, translations, scaling, and flipping, to increase the dataset size and achieve a more balanced distribution.
 4. **Split the data**: Split the dataset into training, validation, and testing sets.
 5. **Transfer learning**: Use a pre-trained ResNet50 model as a feature 
 extractor, and freeze its layers. Extract the features from the augmented 
