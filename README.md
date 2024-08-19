@@ -71,12 +71,12 @@ patients, including both normal and diseased images.
 2. **Data preprocessing**: Preprocess the images to normalize their size and 
 color, and remove any artifacts or noise. Apply Gaussian blur to smooth 
 out any minor variations in the images.
-- To extract the features from the retina images,we preprocessed given images 
+  - To extract the features from the retina images,we preprocessed given images 
 using:
-   - **Gaussian Blur**: It is a method of blurring an image by convolving the image with 
+     - **Gaussian Blur**: It is a method of blurring an image by convolving the image with 
 a gaussian filter.The blur effect is achieved by averaging the colors of the pixels 
 in the image. 
-   - **Circular cropping**: We found that the size of an image can further reduced by 
+     - **Circular cropping**: We found that the size of an image can further reduced by 
 focusing only on the circular retina part from the image.So we tried to crop the 
 image circularly ,which reduced the size of image to some extent.
 
@@ -96,9 +96,9 @@ including convolutional layers, pooling layers, and fully connected layers.
 the ground truth labels as outputs. This involves initializing the model, 
 defining the loss function, optimizing the model parameters, and 
 evaluating the model's performance on the validation set.
-- We have trained 2 different types of models:
-  1. Using Pre-Trained ResNet-50 model weights alone.
-  2. Using ResNet-50 + engineered layers(as shown in the architecture).
+  - We have trained 2 different types of models:
+    1. Using Pre-Trained ResNet-50 model weights alone.
+    2. Using ResNet-50 + engineered layers(as shown in the architecture).
 8. **Hyperparameter tuning**: Experiment with different hyperparameters such 
 as learning rate, batch size, and number of epochs to fine-tune the model's 
 performance.
@@ -109,7 +109,7 @@ accuracy, precision, recall, and F1 score.
 10. **Deployment**: Deploy the model in a production environment, such as a 
 mobile app or web service, where it can be used to classify retinal images 
 as normal or diseased.
-- we have built an user interface (UI) for diabetic retinopathy detection using Streamlit, a popular library for creating web applications in Python.
-
+  - we have built an user interface (UI) for diabetic retinopathy detection using Streamlit, a popular library for creating web applications in Python.
+<img src="UI_preview.jpg" alt="UI preview"/>
 ## Final Presentation of the project
 A presentation summarizing the entire project is available in the file named **"RetinoAI_Final_PPT"** and project Report in the file named **"RetinoAI_Report"**.
