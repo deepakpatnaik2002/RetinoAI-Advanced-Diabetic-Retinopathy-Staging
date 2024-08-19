@@ -110,5 +110,6 @@ mobile app or web service, where it can be used to classify retinal images
 as normal or diseased.
     - we have built an user interface (UI) for diabetic retinopathy detection using Streamlit, a popular library for creating web applications in Python.
 <img src="UI_preview.jpg" alt="UI preview"/>
+
 ## Final Presentation of the project
 A presentation summarizing the entire project is available in the file named **"RetinoAI_Final_PPT"** and project Report in the file named **"RetinoAI_Report"**.
